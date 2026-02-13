@@ -16,8 +16,8 @@ public class AgentCliRunner {
     public static void main(String[] args) {
         RunConfig runConfig = RunConfig.builder().build();
         //InMemoryRunner runner = new InMemoryRunner(HelloTimeAgent.ROOT_AGENT);
-        // InMemoryRunner runner = new InMemoryRunner(GrammarAgent.ROOT_AGENT);
-        InMemoryRunner runner = new InMemoryRunner(SearchAgent.ROOT_AGENT);
+         InMemoryRunner runner = new InMemoryRunner(GrammarAgent.ROOT_AGENT);
+        //InMemoryRunner runner = new InMemoryRunner(SearchAgent.ROOT_AGENT);
         Session session = runner
                 .sessionService()
                 .createSession(runner.appName(), "User1")
